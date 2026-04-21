@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabCitoyen.org | Montréal</title>
+    
+    <!-- SEO & Metadata -->
+    <title>LabCitoyen.org | Prototyper la démocratie de demain à Montréal</title>
+    <meta name="description" content="LabCitoyen.org est un tremplin montréalais pour les technologies citoyennes (civic tech). Nous démocratisons les données ouvertes et outillons les citoyens pour transformer nos quartiers.">
+    <meta name="keywords" content="civic tech, technologies citoyennes, Montréal, données ouvertes, démocratie participative, innovation sociale, LabCitoyen">
+    <meta name="author" content="LabCitoyen.org">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labcitoyen.org/">
+    <meta property="og:title" content="LabCitoyen.org | Prototyper la démocratie de demain à Montréal">
+    <meta property="og:description" content="Démocratiser les données ouvertes et outiller les citoyens pour transformer nos quartiers ensemble.">
+    <meta property="og:image" content="https://labcitoyen.org/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://labcitoyen.org/">
+    <meta property="twitter:title" content="LabCitoyen.org | Prototyper la démocratie de demain à Montréal">
+    <meta property="twitter:description" content="Démocratiser les données ouvertes et outiller les citoyens pour transformer nos quartiers ensemble.">
+    <meta property="twitter:image" content="https://labcitoyen.org/logo.svg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -17,18 +44,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <svg class="h-8 w-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 19l16-14M4 5l16 14M12 3v18M3 12h18"/>
-                        <circle cx="12" cy="12" r="3" class="fill-blue-100"/>
-                        <circle cx="4" cy="5" r="1.5" class="fill-blue-600"/>
-                        <circle cx="20" cy="5" r="1.5" class="fill-blue-600"/>
-                        <circle cx="4" cy="19" r="1.5" class="fill-blue-600"/>
-                        <circle cx="20" cy="19" r="1.5" class="fill-blue-600"/>
-                        <circle cx="12" cy="3" r="1.5" class="fill-blue-600"/>
-                        <circle cx="12" cy="21" r="1.5" class="fill-blue-600"/>
-                        <circle cx="3" cy="12" r="1.5" class="fill-blue-600"/>
-                        <circle cx="21" cy="12" r="1.5" class="fill-blue-600"/>
-                    </svg>
+                    <img src="logo.svg" alt="LabCitoyen Logo" class="h-8 w-8">
                     <span class="font-bold text-xl tracking-tight text-gray-900">LabCitoyen<span class="text-blue-600">.org</span></span>
                 </div>
 
@@ -54,7 +70,7 @@
                         <span class="block text-blue-600">de demain à Montréal</span>
                     </h1>
                     <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 mb-8">
-                        LabCitoyen.org est un tremplin montréalais pour la civic tech. Nous démocratisons les données ouvertes et outillons les citoyens pour transformer nos quartiers ensemble. Pour une mobilité plus sécuritaire, une meilleure propreté urbaine et une cohabitation harmonieuse.
+                        LabCitoyen.org est un tremplin montréalais pour les technologies citoyennes ("civic tech"). Nous démocratisons les données ouvertes et outillons les citoyens pour transformer nos quartiers ensemble. Pour une mobilité plus sécuritaire, une meilleure propreté urbaine et une cohabitation harmonieuse.
                     </p>
                     <div class="flex justify-center gap-4">
                         <a href="#projets" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors">
@@ -120,81 +136,64 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Plateformes de Démocratie Participative</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
-                            Expérimentation et déploiement d'outils reconnus comme <strong class="text-gray-900">Decidim</strong> pour structurer les consultations citoyennes de quartier et impliquer activement les résidents dans les décisions locales.
-                        </p>
+                <div class="mb-20 max-w-3xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Plateformes de Démocratie Participative</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Expérimentation et déploiement d'outils reconnus comme <strong class="text-gray-900">Decidim</strong> pour structurer les consultations citoyennes de quartier et impliquer activement les résidents dans les décisions locales.
+                    </p>
 
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Émergentes (R&D)</h3>
-                        <ul class="space-y-4 mb-6">
-                            <li class="flex items-start">
-                                <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <div>
-                                    <strong class="text-gray-900 block">Identité numérique décentralisée</strong>
-                                    <span class="text-gray-600">Recherche sur la vérification citoyenne respectueuse de la vie privée pour les consultations locales.</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <div>
-                                    <strong class="text-gray-900 block">Intelligence Artificielle</strong>
-                                    <span class="text-gray-600">Application de l'IA pour l'analyse de données urbaines, la vulgarisation d'informations complexes ou l'assistance aux requêtes citoyennes.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Maquette Visuelle (HTML/CSS) - Dashboard/Network -->
-                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-inner relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
-                        <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Tableau de bord expérimental</h4>
-
-                        <div class="space-y-4">
-                            <!-- Metric Cards -->
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                                    <div class="text-xs text-gray-500 mb-1">Passages Cyclistes</div>
-                                    <div class="text-2xl font-bold text-gray-900">4,250 <span class="text-xs text-green-500 font-normal">↑ 12%</span></div>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                                    <div class="text-xs text-gray-500 mb-1">Requêtes Citoyennes</div>
-                                    <div class="text-2xl font-bold text-gray-900">128 <span class="text-xs text-blue-500 font-normal">Traitées</span></div>
-                                </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Émergentes (R&D)</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <strong class="text-gray-900 block">Identité numérique décentralisée</strong>
+                                <span class="text-gray-600">Recherche sur la vérification citoyenne respectueuse de la vie privée pour les consultations locales.</span>
                             </div>
-
-                            <!-- Graph Mockup -->
-                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 h-40 flex items-end justify-between space-x-2">
-                                <div class="w-full bg-blue-100 rounded-t-sm h-1/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Lun</div></div>
-                                <div class="w-full bg-blue-200 rounded-t-sm h-2/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Mar</div></div>
-                                <div class="w-full bg-blue-300 rounded-t-sm h-1/2 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Mer</div></div>
-                                <div class="w-full bg-blue-400 rounded-t-sm h-3/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Jeu</div></div>
-                                <div class="w-full bg-blue-500 rounded-t-sm h-full relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Ven</div></div>
-                                <div class="w-full bg-blue-300 rounded-t-sm h-2/3 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Sam</div></div>
-                                <div class="w-full bg-blue-200 rounded-t-sm h-1/3 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Dim</div></div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <strong class="text-gray-900 block">Intelligence Artificielle</strong>
+                                <span class="text-gray-600">Application de l'IA pour l'analyse de données urbaines, la vulgarisation d'informations complexes ou l'assistance aux requêtes citoyennes.</span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Systèmes d'implication de quartier</h3>
-                        <p class="text-gray-600">
-                            Développement de plateformes d'engagement pragmatiques. Par exemple, un système de participation à la propreté urbaine en cours de réflexion pour <span class="italic">quartierneuf.ca</span>.
-                        </p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Visualisation de données locales</h3>
-                        <p class="text-gray-600">
-                            Projets exploitant les données ouvertes pour créer des outils utiles au quotidien, comme des tableaux de bord en temps réel sur l'utilisation des infrastructures cyclables.
-                        </p>
-                    </div>
+                    <a href="https://quartierneuf.ca" target="_blank" class="group bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Quartier Neuf</h3>
+                            <p class="text-gray-600 mb-6">
+                                L'initiative Neuf est née de la conviction qu'un environnement propre est la base d'une communauté saine et vibrante. Notre mission est de promouvoir une culture de la propreté par l'action individuelle et de créer un effet d'entraînement pour une prise en charge collective de notre environnement.
+                            </p>
+                        </div>
+                        <div class="flex items-center text-blue-600 font-semibold text-sm">
+                            Visiter le site
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://velo.gabfortin.com/" target="_blank" class="group bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Données Vélo Montréal</h3>
+                            <p class="text-gray-600 mb-6">
+                                Données de passage de cyclistes à Montréal, tirées du portail de données ouvertes de la Ville.
+                            </p>
+                        </div>
+                        <div class="flex items-center text-blue-600 font-semibold text-sm">
+                            Visiter le site
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -261,10 +260,28 @@
         </section>
     </main>
 
-    <!-- Footer simple -->
-    <footer class="bg-gray-50 border-t border-gray-200 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
-            &copy; 2024 LabCitoyen.org. Prototyper la démocratie de demain à Montréal.
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-gray-500 text-sm">
+                    &copy; 2026 LabCitoyen.org. Prototyper la démocratie de demain à Montréal.
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="https://github.com/labcitoyen" target="_blank" class="text-gray-400 hover:text-gray-900 transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/showcase/labcitoyen" target="_blank" class="text-gray-400 hover:text-blue-700 transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/labcitoyen/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10s-10 4.477-10 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
