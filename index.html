@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabCitoyen.org | Montréal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+    <!-- En-tête / Navigation Sticky -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <svg class="h-8 w-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19l16-14M4 5l16 14M12 3v18M3 12h18"/>
+                        <circle cx="12" cy="12" r="3" class="fill-blue-100"/>
+                        <circle cx="4" cy="5" r="1.5" class="fill-blue-600"/>
+                        <circle cx="20" cy="5" r="1.5" class="fill-blue-600"/>
+                        <circle cx="4" cy="19" r="1.5" class="fill-blue-600"/>
+                        <circle cx="20" cy="19" r="1.5" class="fill-blue-600"/>
+                        <circle cx="12" cy="3" r="1.5" class="fill-blue-600"/>
+                        <circle cx="12" cy="21" r="1.5" class="fill-blue-600"/>
+                        <circle cx="3" cy="12" r="1.5" class="fill-blue-600"/>
+                        <circle cx="21" cy="12" r="1.5" class="fill-blue-600"/>
+                    </svg>
+                    <span class="font-bold text-xl tracking-tight text-gray-900">LabCitoyen<span class="text-blue-600">.org</span></span>
+                </div>
+
+                <!-- Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Accueil</a>
+                    <a href="#projets" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projets & R&D</a>
+                    <a href="#ateliers" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Ateliers</a>
+                    <a href="#equipe" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Équipe / Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="pt-20 pb-16 lg:pt-32 lg:pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Hero -->
+                <div class="text-center max-w-4xl mx-auto mb-20">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-6">
+                        <span class="block">Prototyper la démocratie</span>
+                        <span class="block text-blue-600">de demain à Montréal</span>
+                    </h1>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 mb-8">
+                        LabCitoyen.org est un tremplin montréalais pour la civic tech. Nous démocratisons les données ouvertes et outillons les citoyens pour transformer nos quartiers ensemble. Pour une mobilité plus sécuritaire, une meilleure propreté urbaine et une cohabitation harmonieuse.
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <a href="#projets" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors">
+                            Découvrir nos projets
+                        </a>
+                        <a href="#equipe" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10 transition-colors">
+                            Rejoindre le Lab
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Les 3 Piliers -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Pilier 1 -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow">
+                        <div class="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Exploration de Données</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Exploitation du portail de la Ville de Montréal. Nous vulgarisons l'information pour rendre les données urbaines accessibles et compréhensibles par tous les citoyens.
+                        </p>
+                    </div>
+
+                    <!-- Pilier 2 -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow">
+                        <div class="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Développement et Expérimentation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Laboratoire de création de systèmes civiques et R&D technologique. Incubation de nouveaux outils pour l'implication citoyenne locale.
+                        </p>
+                    </div>
+
+                    <!-- Pilier 3 -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow">
+                        <div class="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Ateliers et Sensibilisation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Agir et s'impliquer techniquement et politiquement. Nous organisons des ateliers pour démystifier la technologie au service de l'action de quartier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets & R&D -->
+        <section id="projets" class="py-16 lg:py-24 bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Projets et Laboratoire d'Innovation</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                        Découvrez nos initiatives, expérimentations et outils pour réinventer la vie de quartier.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Plateformes de Démocratie Participative</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Expérimentation et déploiement d'outils reconnus comme <strong class="text-gray-900">Decidim</strong> pour structurer les consultations citoyennes de quartier et impliquer activement les résidents dans les décisions locales.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Émergentes (R&D)</h3>
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900 block">Identité numérique décentralisée</strong>
+                                    <span class="text-gray-600">Recherche sur la vérification citoyenne respectueuse de la vie privée pour les consultations locales.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900 block">Intelligence Artificielle</strong>
+                                    <span class="text-gray-600">Application de l'IA pour l'analyse de données urbaines, la vulgarisation d'informations complexes ou l'assistance aux requêtes citoyennes.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Maquette Visuelle (HTML/CSS) - Dashboard/Network -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-inner relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+                        <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Tableau de bord expérimental</h4>
+
+                        <div class="space-y-4">
+                            <!-- Metric Cards -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                    <div class="text-xs text-gray-500 mb-1">Passages Cyclistes</div>
+                                    <div class="text-2xl font-bold text-gray-900">4,250 <span class="text-xs text-green-500 font-normal">↑ 12%</span></div>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                    <div class="text-xs text-gray-500 mb-1">Requêtes Citoyennes</div>
+                                    <div class="text-2xl font-bold text-gray-900">128 <span class="text-xs text-blue-500 font-normal">Traitées</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Graph Mockup -->
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 h-40 flex items-end justify-between space-x-2">
+                                <div class="w-full bg-blue-100 rounded-t-sm h-1/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Lun</div></div>
+                                <div class="w-full bg-blue-200 rounded-t-sm h-2/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Mar</div></div>
+                                <div class="w-full bg-blue-300 rounded-t-sm h-1/2 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Mer</div></div>
+                                <div class="w-full bg-blue-400 rounded-t-sm h-3/4 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Jeu</div></div>
+                                <div class="w-full bg-blue-500 rounded-t-sm h-full relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Ven</div></div>
+                                <div class="w-full bg-blue-300 rounded-t-sm h-2/3 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Sam</div></div>
+                                <div class="w-full bg-blue-200 rounded-t-sm h-1/3 relative group"><div class="hidden group-hover:block absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded">Dim</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Systèmes d'implication de quartier</h3>
+                        <p class="text-gray-600">
+                            Développement de plateformes d'engagement pragmatiques. Par exemple, un système de participation à la propreté urbaine en cours de réflexion pour <span class="italic">quartierneuf.ca</span>.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Visualisation de données locales</h3>
+                        <p class="text-gray-600">
+                            Projets exploitant les données ouvertes pour créer des outils utiles au quotidien, comme des tableaux de bord en temps réel sur l'utilisation des infrastructures cyclables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Ateliers -->
+        <section id="ateliers" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Ateliers et Implication</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                        Formez-vous et impliquez-vous concrètement dans la vie de votre quartier grâce à nos ateliers.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Technologie & Implication</h4>
+                        <p class="text-gray-600">Introduction à l'application des technologies à l'implication politique et citoyenne.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">Données Ouvertes</h4>
+                        <p class="text-gray-600">Comment lire et utiliser le portail de Données Ouvertes de Montréal pour votre quartier ?</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">IA & Identité Numérique</h4>
+                        <p class="text-gray-600">Démystifier l'Intelligence Artificielle et l'identité numérique pour l'action citoyenne.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Équipe & Contact -->
+        <section id="equipe" class="py-16 lg:py-24 bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-blue-600 rounded-3xl overflow-hidden shadow-xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-10 md:p-16 text-white">
+                            <h2 class="text-3xl font-extrabold mb-6">L'Équipe & La Communauté</h2>
+                            <p class="text-blue-100 text-lg mb-6 leading-relaxed">
+                                <strong class="text-white">Le Lab :</strong> Espace neutre d'innovation, d'expérimentation et d'engagement citoyen.
+                            </p>
+                            <p class="text-blue-100 text-lg mb-8 leading-relaxed">
+                                Nous sommes en train de bâtir notre noyau dur ! Nous recherchons des profils avec de fortes compétences techniques (logiciel, données, IA, design) qui sont de véritables amoureux de Montréal et de la vie de quartier.
+                            </p>
+                            <div class="mt-8">
+                                <a href="mailto:contact@labcitoyen.org" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 transition-colors">
+                                    Nous écrire : contact@labcitoyen.org
+                                </a>
+                                <p class="mt-4 text-sm text-blue-200">Rejoignez-nous pour collaborer sur des preuves de concept (PoC).</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-700 p-10 md:p-16 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-white mb-6">Appel aux Élus et Organismes</h3>
+                            <p class="text-blue-100 text-lg mb-8">
+                                Vous représentez un arrondissement ou un organisme ? Collaborons ensemble pour déployer des solutions technologiques hyper-locales qui répondent aux vrais besoins des citoyens.
+                            </p>
+                            <a href="#projets" class="inline-flex items-center justify-center px-6 py-3 border border-blue-400 text-base font-medium rounded-md text-white hover:bg-blue-600 transition-colors">
+                                Voir nos expérimentations
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer simple -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            &copy; 2024 LabCitoyen.org. Prototyper la démocratie de demain à Montréal.
+        </div>
+    </footer>
+</body>
+</html>
