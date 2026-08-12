@@ -1,0 +1,209 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Décongestion Grand Montréal — Lab Citoyen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="bg-emerald-500 text-slate-950 font-black px-2.5 py-1 rounded text-sm tracking-wider">LAB CITOYEN</span>
+        <span class="text-slate-400 font-medium text-sm hidden sm:inline">/decongestion</span>
+      </div>
+      <nav class="flex items-center gap-6 text-sm font-medium">
+        <a href="#vision" class="hover:text-emerald-400 transition">Vision</a>
+        <a href="#donnees" class="hover:text-emerald-400 transition">Sondage</a>
+        <a href="#tarification" class="hover:text-emerald-400 transition">Péage & Exemptions</a>
+        <a href="#elections" class="hover:text-emerald-400 transition">Élections 2026</a>
+        <a href="#participer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-2 rounded-lg font-bold transition">Participer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-24 overflow-hidden border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+          <span>Projet pilote — 1er avril 2027</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+          Un plan citoyen pour débloquer les ponts du Grand Montréal
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
+          Une tarification modulée de 5,50 $ pour l'auto solo à l’entrée de l’île, réinvestie à 100 % dans des navettes de banlieue directes et la gratuité pour le covoiturage et l’autopartage.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#donnees" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3.5 rounded-lg font-bold text-center transition">
+            Soumettre mes trajets quotidiens
+          </a>
+          <a href="#elections" class="border border-slate-700 hover:border-slate-500 bg-slate-800/50 text-white px-6 py-3.5 rounded-lg font-semibold text-center transition">
+            Interpeller les candidats 2026
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquête Trajets (Appel à l'action prioritaire Août-Sept 2026) -->
+  <section id="donnees" class="py-20 bg-slate-800/50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-emerald-400 font-bold text-sm tracking-wider uppercase">Étape 1 — Collecte de données</span>
+          <h2 class="text-3xl font-bold text-white mt-2 mb-4">Aidez-nous à concevoir le réseau de navettes de banlieue</h2>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Avant le déploiement du projet pilote en avril 2027, nous cartographions les besoins réels des navetteurs de la Couronne Nord et de la Couronne Sud. Indiquez vos heures et trajets habituels pour créer des lignes directes vers le REM et le métro.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-300 mb-8">
+            <li class="flex items-center gap-3">
+              <span class="text-emerald-400 font-bold">✓</span> Cartographie anonyme origine-destination
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-emerald-400 font-bold">✓</span> Modélisation des arrêts de navettes express
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-emerald-400 font-bold">✓</span> Identification des futurs hubs de covoiturage de quartier
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-xl">
+          <h3 class="text-xl font-bold text-white mb-6">Sondage navetteur (2 minutes)</h3>
+          <form class="space-y-4" onsubmit="event.preventDefault();">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Ville / Quartier d'origine</label>
+              <input type="text" placeholder="ex. Longueuil, Blainville, Brossard..." class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Destination sur l'île</label>
+              <input type="text" placeholder="ex. Éts, Ville-Marie, Mile-End..." class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Heure d'aller</label>
+                <input type="time" value="07:30" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Heure de retour</label>
+                <input type="time" value="16:30" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
+              </div>
+            </div>
+            <button class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg transition mt-2">
+              Transmettre mes besoins de mobilité
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modèle de tarification -->
+  <section id="tarification" class="py-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-white mb-4">Un modèle juste et incitatif</h2>
+        <p class="text-slate-400">Le tarif est fixé légèrement au-dessus du coût du transport en commun pour encourager l'abandon du solo-automobilisme tout en récompensant la mobilité partagée.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Payant -->
+        <div class="bg-slate-800/40 border border-rose-500/30 rounded-2xl p-8">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-2xl font-bold text-white">Auto solo</h3>
+            <span class="text-3xl font-black text-rose-400">5,50 $ <span class="text-xs text-slate-400 font-normal">/ passage</span></span>
+          </div>
+          <p class="text-slate-300 text-sm mb-6">S'applique uniquement aux véhicules individuels avec un seul occupant entrant à Montréal par les ponts aux heures de pointe.</p>
+          <div class="border-t border-slate-700/50 pt-4 text-xs text-slate-400">
+            Contrôle automatisé par caméras à lecture de plaques (ANPR) et vérifications ciblées aux sorties.
+          </div>
+        </div>
+
+        <!-- Gratuit -->
+        <div class="bg-slate-800/40 border border-emerald-500/30 rounded-2xl p-8">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-2xl font-bold text-white">Mobilité partagée & pro</h3>
+            <span class="text-3xl font-black text-emerald-400">0 $ <span class="text-xs text-slate-400 font-normal">/ GRATUIT</span></span>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Véhicules d'autopartage (Communauto)</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Covoiturage (2 occupants ou plus)</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Véhicules commerciaux et flottes d'entreprise</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Transports collectifs et adaptés</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hubs & Innovation -->
+  <section id="vision" class="py-20 bg-slate-800/30 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-white mb-4">Covoiturage spontané de quartier</h2>
+        <p class="text-slate-400">Rendre le covoiturage aussi simple que de prendre le bus grâce à des infrastructures légères de quartier.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+          <div class="text-emerald-400 font-bold text-xl mb-2">1. Pick-up zones</div>
+          <p class="text-slate-400 text-sm">Aménagement de points de rencontre sécurisés dans chaque quartier de banlieue et secteur de l'île.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+          <div class="text-emerald-400 font-bold text-xl mb-2">2. Appariement instantané</div>
+          <p class="text-slate-400 text-sm">Application mobile permettant d'embarquer un passager en attente sur votre route pour débloquer immédiatement l'exemption de péage.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+          <div class="text-emerald-400 font-bold text-xl mb-2">3. Pôles de bord de pont</div>
+          <p class="text-slate-400 text-sm">Aires de regroupement rapide juste avant les entrées de ponts pour faciliter le covoiturage de dernière minute.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Échéancier Politique 2026 -->
+  <section id="elections" class="py-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <span class="text-emerald-400 font-bold text-sm tracking-wider uppercase">Faire entendre notre voix</span>
+        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Imposer la décongestion au cœur des élections de l'automne 2026</h2>
+        <p class="text-slate-300 leading-relaxed mb-8">
+          Les élections générales provinciales du **5 octobre 2026** et les élections partielles fédérales à Montréal (**Laurier–Sainte-Marie** et **Rosemont–La Petite-Patrie**) constituent la fenêtre idéale pour faire adopter les modifications législatives requises aux niveaux fédéral, provincial et municipal.
+        </p>
+
+        <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 space-y-4">
+          <h4 class="font-bold text-white">Revendications transmises aux candidats :</h4>
+          <div class="text-sm text-slate-300 space-y-2">
+            <p><strong>Fédéral :</strong> Autoriser la tarification sur les ponts sous gestion fédérale et harmoniser le registre de plaques d'immatriculation.</p>
+            <p><strong>Provincial :</strong> Modifier le Code de la sécurité routière et confier à l'ARTM la gestion du fonds de réinvestissement des péages.</p>
+            <p><strong>Municipal :</strong> Adopter le règlement de zonage de mobilité et aménager les sorties de ponts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer id="participer" class="py-12 bg-slate-950 text-slate-500 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold text-slate-400">Lab Citoyen — Initiative indépendante de mobilité durable</p>
+        <p class="text-xs mt-1">labcitoyen.org/decongestion — Grand Montréal, Québec</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="#donnees" class="hover:text-emerald-400 transition">Participer</a>
+        <a href="#tarification" class="hover:text-emerald-400 transition">Projet pilote 2027</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+```
