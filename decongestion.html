@@ -20,7 +20,7 @@
         <a href="#donnees" class="hover:text-emerald-400 transition">Sondage</a>
         <a href="#tarification" class="hover:text-emerald-400 transition">Péage & Exemptions</a>
         <a href="#elections" class="hover:text-emerald-400 transition">Élections 2026</a>
-        <a href="#participer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-2 rounded-lg font-bold transition">Participer</a>
+        <a href="#donnees" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-2 rounded-lg font-bold transition">Participer</a>
       </nav>
     </div>
   </header>
@@ -50,54 +50,44 @@
     </div>
   </section>
 
-  <!-- Enquête Trajets (Appel à l'action prioritaire Août-Sept 2026) -->
+  <!-- Enquête Trajets (Appel à l'action prioritaire - Intégration Google Form) -->
   <section id="donnees" class="py-20 bg-slate-800/50 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
           <span class="text-emerald-400 font-bold text-sm tracking-wider uppercase">Étape 1 — Collecte de données</span>
           <h2 class="text-3xl font-bold text-white mt-2 mb-4">Aidez-nous à concevoir le réseau de navettes de banlieue</h2>
           <p class="text-slate-300 mb-6 leading-relaxed">
-            Avant le déploiement du projet pilote en avril 2027, nous cartographions les besoins réels des navetteurs de la Couronne Nord et de la Couronne Sud. Indiquez vos heures et trajets habituels pour créer des lignes directes vers le REM et le métro.
+            Avant le déploiement du projet pilote en avril 2027, nous cartographions les besoins réels des navetteurs de la Couronne Nord et de la Couronne Sud.
+          </p>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Indiquez vos codes postaux (RTA) d'origine et de destination ainsi que vos préférences pour évaluer l'intérêt envers les navettes express et le covoiturage.
           </p>
           <ul class="space-y-3 text-sm text-slate-300 mb-8">
             <li class="flex items-center gap-3">
-              <span class="text-emerald-400 font-bold">✓</span> Cartographie anonyme origine-destination
+              <span class="text-emerald-400 font-bold">✓</span> Saisie rapide via codes postaux (ex. J4K, H2X)
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-emerald-400 font-bold">✓</span> Modélisation des arrêts de navettes express
+              <span class="text-emerald-400 font-bold">✓</span> Évaluation de l'intérêt pour le covoiturage spontané
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-emerald-400 font-bold">✓</span> Identification des futurs hubs de covoiturage de quartier
+              <span class="text-emerald-400 font-bold">✓</span> Cartographie anonyme des besoins de transport collectif
             </li>
           </ul>
         </div>
 
-        <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-xl">
-          <h3 class="text-xl font-bold text-white mb-6">Sondage navetteur (2 minutes)</h3>
-          <form class="space-y-4" onsubmit="event.preventDefault();">
-            <div>
-              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Ville / Quartier d'origine</label>
-              <input type="text" placeholder="ex. Longueuil, Blainville, Brossard..." class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Destination sur l'île</label>
-              <input type="text" placeholder="ex. Éts, Ville-Marie, Mile-End..." class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Heure d'aller</label>
-                <input type="time" value="07:30" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Heure de retour</label>
-                <input type="time" value="16:30" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500">
-              </div>
-            </div>
-            <button class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg transition mt-2">
-              Transmettre mes besoins de mobilité
-            </button>
-          </form>
+        <!-- Google Form iFrame -->
+        <div class="md:col-span-7 bg-slate-900 rounded-2xl border border-slate-700 shadow-2xl overflow-hidden">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSegblv8p1HbgtKIwb-aT6IiijWUpitPt9RuUVMiqNbzSBuyZA/viewform?embedded=true" 
+            width="100%" 
+            height="850" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            class="w-full border-0">
+            Chargement du formulaire...
+          </iframe>
         </div>
       </div>
     </div>
@@ -152,7 +142,7 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
           <div class="text-emerald-400 font-bold text-xl mb-2">1. Pick-up zones</div>
-          <p class="text-slate-400 text-sm">Aménagement de points de rencontre sécurisés dans chaque quartier de banlieue et secteur de l'île.</p>
+          <p class="text-slate-400 text-sm">Aménagement de points de rencontre sécurisés dans chaque secteur postal de banlieue et sur l'île.</p>
         </div>
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
           <div class="text-emerald-400 font-bold text-xl mb-2">2. Appariement instantané</div>
@@ -189,7 +179,7 @@
   </section>
 
   <!-- Pied de page -->
-  <footer id="participer" class="py-12 bg-slate-950 text-slate-500 text-sm">
+  <footer class="py-12 bg-slate-950 text-slate-500 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
         <p class="font-semibold text-slate-400">Lab Citoyen — Initiative indépendante de mobilité durable</p>
