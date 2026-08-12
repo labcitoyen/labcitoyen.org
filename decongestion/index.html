@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Décongestion Grand Montréal — Lab Citoyen</title>
+  
+  <!-- Métadonnées de prévisualisation (Open Graph / Réseaux sociaux) -->
+  <meta property="og:title" content="Un plan citoyen pour débloquer les ponts du Grand Montréal">
+  <meta property="og:description" content="Projet pilote de tarification de la congestion de 5,50 $ pour l'auto solo, réinvestie à 100 % dans des navettes de banlieue et la gratuité pour le covoiturage.">
+  <meta property="og:image" content="https://labcitoyen.org/decongestion/decongestion.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="559">
+  <meta property="og:url" content="https://labcitoyen.org/decongestion">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Un plan citoyen pour débloquer les ponts du Grand Montréal">
+  <meta name="twitter:description" content="Projet pilote de tarification de la congestion de 5,50 $ pour l'auto solo, réinvestie à 100 % dans des navettes de banlieue et la gratuité pour le covoiturage.">
+  <meta name="twitter:image" content="https://labcitoyen.org/decongestion/decongestion.jpg">
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-900">
@@ -25,26 +41,45 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-20 pb-24 overflow-hidden border-b border-slate-800">
+  <!-- Hero Section avec Image -->
+  <section class="relative pt-12 pb-20 overflow-hidden border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
-          <span>Projet pilote — 1er avril 2027</span>
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Texte de présentation -->
+        <div class="lg:col-span-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+            <span>Projet pilote — 1er avril 2027</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Un plan citoyen pour débloquer les ponts du Grand Montréal
+          </h1>
+          <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+            Une tarification modulée de 5,50 $ pour l'auto solo à l’entrée de l’île, réinvestie à 100 % dans des navettes de banlieue directes et la gratuité pour le covoiturage et l’autopartage.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#donnees" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3.5 rounded-lg font-bold text-center transition">
+              Soumettre mes trajets quotidiens
+            </a>
+            <a href="#elections" class="border border-slate-700 hover:border-slate-500 bg-slate-800/50 text-white px-6 py-3.5 rounded-lg font-semibold text-center transition">
+              Interpeller les candidats 2026
+            </a>
+          </div>
         </div>
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-          Un plan citoyen pour débloquer les ponts du Grand Montréal
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
-          Une tarification modulée de 5,50 $ pour l'auto solo à l’entrée de l’île, réinvestie à 100 % dans des navettes de banlieue directes et la gratuité pour le covoiturage et l’autopartage.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#donnees" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3.5 rounded-lg font-bold text-center transition">
-            Soumettre mes trajets quotidiens
-          </a>
-          <a href="#elections" class="border border-slate-700 hover:border-slate-500 bg-slate-800/50 text-white px-6 py-3.5 rounded-lg font-semibold text-center transition">
-            Interpeller les candidats 2026
-          </a>
+
+        <!-- Illustration Hero -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+            <img 
+              src="decongestion.jpg" 
+              alt="Aperçu du système de péage de congestion et voie réservée aux VMO sur le pont Jacques-Cartier" 
+              width="1024" 
+              height="559" 
+              class="w-full h-auto object-cover"
+            />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 to-transparent p-4 text-xs text-slate-300 text-center">
+              Concept visuel : péage pour autos solos et gratuité pour les VMO, Communauto et navettes directes.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -108,7 +143,7 @@
             <h3 class="text-2xl font-bold text-white">Auto solo</h3>
             <span class="text-3xl font-black text-rose-400">5,50 $ <span class="text-xs text-slate-400 font-normal">/ passage</span></span>
           </div>
-          <p class="text-slate-300 text-sm mb-6">S'applique uniquement aux véhicules individuels avec un seul occupant entrant à Montréal par les ponts aux heures de pointe.</p>
+          <p class="text-slate-300 text-sm mb-6">S'lique uniquement aux véhicules individuels avec un seul occupant entrant à Montréal par les ponts aux heures de pointe.</p>
           <div class="border-t border-slate-700/50 pt-4 text-xs text-slate-400">
             Contrôle automatisé par caméras à lecture de plaques (ANPR) et vérifications ciblées aux sorties.
           </div>
@@ -122,7 +157,7 @@
           </div>
           <ul class="space-y-3 text-sm text-slate-300 mb-6">
             <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Véhicules d'autopartage (Communauto)</li>
-            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Covoiturage (2 occupants ou plus)</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Covoiturage / VMO (2 occupants ou plus)</li>
             <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Véhicules commerciaux et flottes d'entreprise</li>
             <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Transports collectifs et adaptés</li>
           </ul>
